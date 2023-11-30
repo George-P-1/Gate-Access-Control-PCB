@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "IR_SENSORPJ")(type "KiCad")(uri "${KIPRJMOD}/IR_SENSORPJ.kicad_sym")(options "")(descr ""))
+  (lib (name "RF_RECEIVER_433PJ")(type "KiCad")(uri "${KIPRJMOD}/RF_RECEIVER_433PJ.kicad_sym")(options "")(descr ""))
+)
