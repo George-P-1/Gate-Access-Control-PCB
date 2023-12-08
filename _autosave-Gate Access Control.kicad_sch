@@ -1006,6 +1006,9 @@
   (junction (at 41.91 69.85) (diameter 0) (color 0 0 0 0)
     (uuid 368f40b7-232d-41eb-921f-2b3b5ca0eb7a)
   )
+  (junction (at 96.52 41.91) (diameter 0) (color 0 0 0 0)
+    (uuid 7d173537-e681-418f-b834-adc96c6d513b)
+  )
   (junction (at 179.07 34.29) (diameter 0) (color 0 0 0 0)
     (uuid 7d633738-0d77-4385-81ec-566e8ff1b6fc)
   )
@@ -1085,7 +1088,7 @@
     (stroke (width 0) (type default))
     (uuid 2176dcaa-5c75-49a2-a583-e03483867017)
   )
-  (wire (pts (xy 96.52 45.72) (xy 96.52 34.29))
+  (wire (pts (xy 96.52 45.72) (xy 96.52 41.91))
     (stroke (width 0) (type default))
     (uuid 2200154c-fca8-4040-93b8-01dd9b86dc20)
   )
@@ -1332,6 +1335,10 @@
   (wire (pts (xy 41.91 69.85) (xy 55.88 69.85))
     (stroke (width 0) (type default))
     (uuid f5026358-8e1c-4fa0-b716-895ca3ed93f3)
+  )
+  (wire (pts (xy 96.52 41.91) (xy 96.52 34.29))
+    (stroke (width 0) (type default))
+    (uuid f622fe6f-69d0-4abc-b033-2d895dc0e435)
   )
   (wire (pts (xy 111.76 114.3) (xy 118.11 114.3))
     (stroke (width 0) (type default))
@@ -1797,7 +1804,7 @@
     )
   )
 
-  (symbol (lib_id "Device:Polyfuse") (at 86.36 160.02 90) (unit 1)
+  (symbol (lib_id "Device:Polyfuse") (at 86.36 160.02 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5312bf53-489e-4c29-b3ac-c330837021b6)
     (property "Reference" "F1" (at 86.36 153.67 90)
@@ -1806,14 +1813,14 @@
     (property "Value" "200 mA" (at 86.36 156.21 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Fuse:Fuse_0402_1005Metric_Pad0.77x0.64mm_HandSolder" (at 91.44 158.75 0)
+    (property "Footprint" "Fuse:Fuse_0402_1005Metric_Pad0.77x0.64mm_HandSolder" (at 81.28 161.29 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Datasheet" "~" (at 86.36 160.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 145b1bd1-17aa-4440-9c35-b4571133e8e3))
-    (pin "2" (uuid 7b1c5386-67bf-4ace-87c9-93d7d57d6888))
+    (pin "1" (uuid 8002fd6f-1b8d-4574-b3b2-1a6686285a86))
+    (pin "2" (uuid 044d3877-5784-4ef1-af59-cffbb25638ea))
     (instances
       (project "Gate Access Control"
         (path "/6d55f5be-a1af-4b6f-93ea-5d7376bee5e6"
@@ -2260,6 +2267,31 @@
     )
   )
 
+  (symbol (lib_id "power:PWR_FLAG") (at 93.98 160.02 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid bf131b92-dd23-4a87-a553-dbe835a5407f)
+    (property "Reference" "#FLG03" (at 95.885 160.02 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (at 97.79 160.02 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 93.98 160.02 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 93.98 160.02 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 04069517-2e94-4515-ab72-9ea7aa410960))
+    (instances
+      (project "Gate Access Control"
+        (path "/6d55f5be-a1af-4b6f-93ea-5d7376bee5e6"
+          (reference "#FLG03") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 93.98 162.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cac95b6a-073b-4727-8fcd-21f171c003fc)
@@ -2377,7 +2409,7 @@
     (property "Datasheet" "" (at 96.52 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6f073e95-bed1-4256-a4d7-d65a9e3e0794))
+    (pin "1" (uuid 3bbe8e54-127a-4741-b944-f7c5d4a21e14))
     (instances
       (project "Gate Access Control"
         (path "/6d55f5be-a1af-4b6f-93ea-5d7376bee5e6"
