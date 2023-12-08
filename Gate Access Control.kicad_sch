@@ -1843,7 +1843,7 @@
     (property "Value" "22pF" (at 34.29 64.77 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Fuse:Fuse_0402_1005Metric_Pad0.77x0.64mm_HandSolder" (at 38.1 68.8848 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 38.1 68.8848 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 34.29 69.85 0)
